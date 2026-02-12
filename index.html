@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/stle.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body class="bgColor">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="bg-info text-white text-center p-4 m-4">TODO Task</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="todoFrom">
+                            <label for="todoItem">todoItem</label>
+                            <input type="text" class="form-control" id="todoItem" placeholder="Enter todo Item">
+                            <button type="submit" class="btn btn-outline-primary btn-sm btn-block mt-4" id="addBtn">Add Todo</button>
+                            <button type="button" class="btn btn-outline-primary btn-sm btn-block mt-4 d-none" id="updateTodoBtn">Update TOdo</button>
+
+                        </form>
+                    </div>
+                </div>
+              
+
+                </form>
+            </div>
+
+
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body" id="todoContainer">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <strong>CSS</strong>
+                                <div>
+                                         <i class="fa-solid fa-pen-to-square fa-2x text-primary" role="button"></i>
+                                <i class="fa-solid fa-trash fa-2x text-danger" role="button"></i>
+                                </div>
+                            
+                                
+                                </div>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/app.js"></script>
+    
+</body>
+</html>
